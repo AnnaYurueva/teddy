@@ -14,10 +14,10 @@
 <body>
 <!--<div class="techworks" align="center">На сайте ведутся технические работы! Приходите позже.</div>-->
 <div class="page">
-    <div class="header">
+    <div class="header" id="header">
         <div class="container">
             <div class="navigation">
-                <div class="nav__logo">
+                <div class="nav__logo" data-scroll="#intro">
                     <img src="img/0.%20menu_scroll/logo_scroll.png" alt="">
                 </div>
                 <div class="nav">
@@ -30,17 +30,17 @@
                             <img src="img/1.%20main_screen/phone_main.png" alt="">
                             <span>+7 967 572-76-73</span>
                         </a>
-                        <a class="nav__lang active__lang" href="">RUS</a>
-                        <a class="nav__lang" href="index.en.html">ENG</a>
+                        <a class="nav__lang active__lang" href="#">RUS</a>
+                        <a class="nav__lang" href="#">ENG</a>
                     </div>
                     <div class="nav__rov">
-                        <div class="nav__wrap">
-                            <a class="nav__menu active" href="">ГЛАВНАЯ</a>
-                            <a class="nav__menu" href="">О ВЫСТАВКЕ</a>
-                            <a class="nav__menu" href="">ОРГАНИЗАТОР</a>
-                            <a class="nav__menu" href="">УЧАСТИЕ</a>
-                            <a class="nav__menu" href="">ОТЗЫВЫ</a>
-                            <a class="nav__menu" href="">КОНТАКТЫ</a>
+                        <div class="nav__wrap" id="nav">
+                            <a class="nav__menu" href="#" data-scroll="#intro">ГЛАВНАЯ</a>
+                            <a class="nav__menu" href="#" data-scroll="#about">О ВЫСТАВКЕ</a>
+                            <a class="nav__menu" href="#" data-scroll="#organizer">ОРГАНИЗАТОР</a>
+                            <a class="nav__menu" href="#" data-scroll="#part">УЧАСТИЕ</a>
+                            <a class="nav__menu" href="#" data-scroll="#reviews">ОТЗЫВЫ</a>
+                            <a class="nav__menu" href="#" data-scroll="#contact">КОНТАКТЫ</a>
                         </div>
                     </div>
                     <div class="nav__social">
@@ -66,7 +66,7 @@
         </div><!--/container-->
     </div><!--/header-->
 
-    <div class="intro">
+    <div class="intro" id="intro">
         <div class="container">
             <div class="content">
                 <div class="intro__title">
@@ -96,7 +96,7 @@
         </div>
     </div><!--/intro-->
 
-    <div class="about">
+    <div class="about" id="about">
         <div class="content">
             <h2 class="title">О выставке</h2>
             <p class="about__description">«ТеддиМир» — первая выставка тедди-игрушек заочного формата в России,
@@ -168,7 +168,7 @@
     <div class="organizer">
         <div class="container">
 
-            <h2 class="title">Организатор</h2>
+            <h2 class="title" id="organizer">Организатор</h2>
 
             <div class="organizer__item">
                 <div class="organizer__col">
@@ -190,11 +190,11 @@
         </div><!--/content-->
     </div><!--/organizer-->
 
-    <div class="part">
+    <div class="part" id="part">
         <div class="content">
             <h2 class="title">Участие</h2>
             <div class="accordion">
-                <div class="accordion__item accordion__active" data-collapse="#wedo_1">
+                <div class="accordion__item" data-collapse="#wedo_1">
                     <div class="accordion__header">
                         <div class="accordion__title">Какие работы принимают участие в выставке «ТеддиМир»?</div>
                         <button class="accordion__btn"></button>
@@ -266,7 +266,7 @@
                     <div class="accordion__content" id="wedo_7">
                         <p>Работы до 800 рублей, для выставки обязательны по теме «Животные».
                             Неограниченное количество – это то количество, которое по вашему мнению может продаться за время выставки.
-                            Вы должны понимать, если сдаёте 50 совершенно одинаковых магнитов, 100 кусков мыла или 200 пряников-мишек, то я не смогу вывесить все 50-200, будет несколько вариантов, которые будут заменяться по мере продажи.</p>
+                            Вы должны понимать, если сдаёте 50 совершенно одинаковых магнитов, 100 кусков мыла или 200 пряников-мишек, то мы не сможем вывесить все 50-200, будет несколько вариантов, которые будут заменяться по мере продажи.</p>
                     </div>
                 </div>
             </div><!--/accordion -->
@@ -280,7 +280,7 @@
 
     <div class="reviews">
         <div class="content">
-            <h2 class="title">Участники о выставке</h2>
+            <h2 class="title" id="reviews">Участники о выставке</h2>
             <div class="reviews__wrap">
                 <div class="reviews__item">
                     <div class="reviews__photo">
@@ -450,80 +450,7 @@
             </div><!--/gallery__btns-->
     </div>
 
-<!--    <div class="visitors">-->
-<!--        <h2 class="title">Отзывы посетителей</h2>-->
-<!--        <div class="visitors__wrap">-->
-<!--            <div class="visitors__block">-->
-<!--                <div class="visitors__item">-->
-<!--                    <div class="visitors__img">-->
-<!--                        <img src="img/7.%20posetiteli/quote_1920.png" alt="">-->
-<!--                    </div>-->
-<!--                    <div class="visitors__description">-->
-<!--                        <div class="visitors__name">Наталия</div>-->
-<!--                        <div class="visitors__city">Санкт-Петербург</div>-->
-<!--                        <div class="visitors__text">Фейерверк эмоций! Полный восторг! Зашла по привычке в Лавку художника и попала в волшебную сказку. Спасибо устроителям выставки за вдохновение! Спасибо за очень радушный прием! Спасибо золотым рукам мастеров!-->
-<!--                        </div>-->
-<!--                    </div>-->
-<!--                </div>-->
-<!--            </div>-->
-<!--            <div class="visitors__block">-->
-<!--                <div class="visitors__item">-->
-<!--                    <div class="visitors__img">-->
-<!--                        <img src="img/7.%20posetiteli/quote_1920.png" alt="">-->
-<!--                    </div>-->
-<!--                    <div class="visitors__description">-->
-<!--                        <div class="visitors__name">Юлия</div>-->
-<!--                        <div class="visitors__city">Кострома</div>-->
-<!--                        <div class="visitors__text">Спасибо большое! Замечательные игрушки! Такие милые медведи, зайки и кошечки. Всей семье очень понравилась эта сказочно красивая выставка!-->
-<!--                        </div>-->
-<!--                    </div>-->
-<!--                </div>-->
-<!--            </div>-->
-<!--            <div class="visitors__item">-->
-<!--                <div class="visitors__img">-->
-<!--                    <img src="img/7.%20posetiteli/quote_1920.png" alt="">-->
-<!--                </div>-->
-<!--                <div class="visitors__description">-->
-<!--                    <div class="visitors__name">Елена</div>-->
-<!--                    <div class="visitors__city">Саров</div>-->
-<!--                    <div class="visitors__text">Безумно теплое место! Спасибо организаторам. Отдельная благодарность мастерам, золотым рукам! Очень приятно, нежно и уютно.-->
-<!--                    </div>-->
-<!--                </div>-->
-<!--            </div>-->
-<!--            <div class="visitors__item">-->
-<!--                <div class="visitors__img">-->
-<!--                    <img src="img/7.%20posetiteli/quote_1920.png" alt="">-->
-<!--                </div>-->
-<!--                <div class="visitors__description">-->
-<!--                    <div class="visitors__name">Елена</div>-->
-<!--                    <div class="visitors__city">Воркута</div>-->
-<!--                    <div class="visitors__text">Получила огромное наслаждение, удивление, восхищение, восторг! Много выставок в моей жизни было, но эта выставка — чудо! Спасибо всем мастерам за удовольствие от просмотра замечательных работ. Эта выставка вдохновила меня на творчество.-->
-<!--                    </div>-->
-<!--                </div>-->
-<!--            </div>-->
-<!--            <div class="visitors__item">-->
-<!--                <div class="visitors__img">-->
-<!--                    <img src="img/7.%20posetiteli/quote_1920.png" alt="">-->
-<!--                </div>-->
-<!--                <div class="visitors__description">-->
-<!--                    <div class="visitors__name">Екатерина</div>-->
-<!--                    <div class="visitors__city">Санкт-Петербург</div>-->
-<!--                    <div class="visitors__text">Чудные игрушки! У каждой — свой характер и живой взгляд. Очень интересно разглядывать маленькие детали, костюмы. Абсолютное умиление!-->
-<!--                    </div>-->
-<!--                </div>-->
-<!--            </div>-->
-<!--        </div>-->
-<!--        <div id="slider__visitors" class="gallery__btns">-->
-<!--            <button class="gallery__prev">-->
-<!--                <img src="img/3.%20gallery/button_left.png" alt="">-->
-<!--            </button>-->
-<!--            <button class="gallery__next">-->
-<!--                <img src="img/3.%20gallery/button_right.png" alt="">-->
-<!--            </button>-->
-<!--        </div>&lt;!&ndash;/gallery__btns&ndash;&gt;-->
-<!--    </div>&lt;!&ndash;/visitors &ndash;&gt;-->
-
-    <footer>
+    <footer id="contact">
         <div class="footer__wrap">
             <div class="footer__map">
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.710191647879!2d30.312909216252667!3d59.93695096919661!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696311aa26f4fc9%3A0x54a635188a90e3a!2z0JvQsNCy0LrQsCDQpdGD0LTQvtC20L3QuNC60LA!5e0!3m2!1sru!2sru!4v1590588718838!5m2!1sru!2sru" width="100%" height="100%" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>            </div>
